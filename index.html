@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content = "width=device-width">
+    <meta name= "description" content = "The best Supercar Rental Company in Vancouver and Calgary">
+    <meta name="keywords" content="cars, Vancouver, Calgary, Ferrari, Lamborghini, Mercedes, McLaren">
+    <meta name= "author" content= "Hemanth">
+    <title>BigBoyToyz| Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+      
+      
+
+  </head>
+
+  <body>
+
+    <header id="header">
+      <div class="container">
+        <div id="branding">
+            <a id="logo" href="index.html"> <img src="./images/download.jfif" width="100" height="125" > </a>
+            
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="./html/about.html">About</a></li>
+            <li><a href="./html/inventory.html">Our Inventory</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
+            <li><a href="./html/cross-reference.html">Cross-References</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1 id="animation">OUR SUPERCARS ARE HERE</h1>
+      </div>
+      
+        
+    </section>
+    
+
+    <section id="aboutus">
+      <div id="box2" class="container">
+        <h1 style="font-size: 60px; color: black; text-shadow: 0 3px 0 #b2a98f,0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1); text-align: left;" class="page-title">Welcome to BigBoyToyz</h1>
+          <p style="font-size: 30px">By choosing us, you can expect great offers!</p>
+          <p style="font-size: 30px">Check out our inventory !!</p>
+          <div style="text-align: center">
+          <audio id="audio_control" controls>
+            <source src="./multimedia/background.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+            </audio>
+              </div>
+          
+      </div>
+    </section>
+    
+      <section id="ourproducts">
+
+          <div style="text-align: center; padding-top: 20px;">
+          <aside>
+          <img src="./images/lambo.jpg" usemap="#phonemap">
+              <map name="phonemap" >
+                <area shape="rect" coords="490px,50px,845px,740px" alt="Phone" href="./html/inventory.html">
+              </map>
+          </aside>
+              </div>
+      <div id="box3" class="container">
+          <h1 style="font-size: 30px; color: black; text-shadow: 0 3px 0 #b2a98f,0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1); text-align: center;" class="page-title">The only Exotic Car Rental Company in Vancouver and Calgary <span id="italize">YOU</span> need.</h1>
+
+          
+          <p style="text-align: center;font-size:20px">BigBoyToyz is for the automotive connoisseur. Carefully chosen and expertly curated, our menu of rolling artwork offers a stunning range of personality. From the wailing Italian songstress to the cool British spy, we have a dancing partner for your every occasion. A total of eleven exquisite vehicles stand at your beck and call. Choose tastefully. We carry Lamborghini, Ferrari, Aston Martin, Lotus, Mercedes, McLaren, and Range Rover.</p>
+          <p style="text-align: center;">Just click on this button !<br/><a href="./html/inventory.html"><button id="indexButton" style="background: darkred">Click me!</button></a></p>
+        
+      </div>
+        
+    </section>
+      
+      <section id="contactus">
+      <div id="box4" class="container">
+          <h1 style="font-size: 30px; color: black; text-shadow: 0 3px 0 #b2a98f,0 14px 10px rgba(0,0,0,0.15), 0 24px 2px rgba(0,0,0,0.1), 0 34px 30px rgba(0,0,0,0.1); text-align: left;" class="page-title">Make a Reservation!</h1>
+          <p style="text-align: left;">Make a reservation by using our booking system or simply give us a call. 604-259-6162<br/> <a href="./html/contact.html"><button id="indexButton" type="button" style="background: darkred;">Contact Us!</button></a></p>
+          
+          
+        
+      </div>
+    </section>
+
+    <footer id="footer">
+        <button id="clocktime" onclick="setInterval('clocktime()', 1000);">Current Time</button>
+        <p>By Hemanth Anil</p>
+        <p>FINAL PROJECT, Copyright &copy; 2018 </p>
+        <p>Last Modified: November 24th 2018</p>
+    </footer>
+  <!-- Time !-->
+      <script>
+			function clocktime()
+			{
+				var time = new Date();
+				var hour = time.getHours();
+				var minu = time.getMinutes();
+				var secs = time.getSeconds();
+
+				minu = (minu < 10 ? "0" : "") + minu;
+				secs = (secs < 10 ? "0" : "") + secs;
+
+				var snoogleTime = (hour < 12) ? "AM" : "PM";
+				hour = (hour > 12) ? hour-12 : hour;
+				var snoogleDisplay = hour + ":" + minu + ":" + secs;
+
+				document.getElementById("clocktime").innerHTML = snoogleDisplay;
+			}
+          </script>
+      
+      
+
+  </body>
+</html>
